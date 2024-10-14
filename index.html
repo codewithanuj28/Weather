@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather-app</title>
+    <style>
+        #error #main{
+           display:none;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- outer start -->
+     <div id="weather">
+
+        <div id="search">
+            <input type="text" name="" id="input" placeholder="Enter Your City" spellcheck="false">
+            <button id="img" onclick="weather();"><img src="img/search.png" alt=""></button>
+        </div>
+
+
+        <div id="main">
+            <img src="img/clear.png" alt="" class="weather-icon">
+            <h1 id="temp">16°C</h1>
+            <h2 id="city">Delhi</h2>
+
+            <div class="details">
+                    <div class="col">
+                        <img src="img/humidity.png" alt="">
+                        <div>
+                            <p id="humidity">17%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="img/wind.png" alt="">
+                        <div>
+                            <p id="wind">10km/h</p>
+                            <p>Wind</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+       <div id="error">
+            <h2>Invalid City Name</h2>
+        </div>
+
+
+
+
+     </div>
+    <!-- outer ends -->
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+<!--
+ https://api.openweathermap.org/data/2.5/weather?q=Gorakhpur&appid=d732528ed08e3d9c908b4f3fc567eb11
+  -->
